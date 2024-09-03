@@ -104,7 +104,7 @@
             <div class="main-menu__wrapper">
                 <div class="main-menu__wrapper-inner">
                     <div class="main-menu__logo">
-                        <a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" alt=""></a>
+                        <a href="{{url('/')}}"><img src="{{asset('home/images/'.$web->logo)}}" alt="" style="width: 100px;"></a>
                     </div>
                     @if(!empty($web->phone))
                         <div class="main-menu__call">
@@ -199,7 +199,7 @@
                                     </ul>
                                 </div>
                                 <div class="main-menu__right">
-                                    <div class="main-menu__btn-box">
+                                    <div class="main-menu__search-box">
                                         <a href="{{route('register')}}" class="thm-btn main-menu__btn">Get Started</a>
                                     </div>
                                 </div>
@@ -318,11 +318,11 @@
 </div>
 <!-- /.mobile-nav__wrapper -->
 
-<div class="telegram-float-widget">
+<!--<div class="telegram-float-widget">
     <a href="https://wa.me/{{$web->phone}}" target="_blank">
         <img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-256.png" alt="" width="50">
     </a>
-</div>
+</div>-->
 
 <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
 

@@ -230,7 +230,7 @@
                         <div class="about-one__img-box wow slideInLeft" data-wow-delay="100ms"
                              data-wow-duration="2500ms">
                             <div class="about-one__img">
-                                <img src="{{asset('home/images/resources/about-one-img-1.jpg')}}" alt="">
+                                <img src="{{asset('home/images/resources/about-three-img-1.jpg')}}" alt="">
                                 <div class="about-one__shape-1 float-bob-x">
                                     <img src="{{asset('home/images/shapes/about-one-shape-1.png')}}" alt="">
                                 </div>
