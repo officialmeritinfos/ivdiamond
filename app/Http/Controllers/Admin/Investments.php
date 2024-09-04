@@ -53,9 +53,20 @@ class Investments extends Controller
 
         $investment = Investment::where('id',$id)->first();
 
+        $investor = User::where('id',$investment->user)->first();
+
         $type = ReturnType::where('id',$investment->returnType)->first();
 
         $timeReturn = strtotime($type->duration,time());
+
+        $userMessage = "
+                Your deposit of <b>$".number_format($investment->amount,2)."</b> has been approved, and your investment
+                activated. Your returns will be credited to you according to the plan's return schedule and cycle.
+                <br/><br/>
+                <p>Happy Investing & Cheers to a successful return!</p>
+            ";
+        //send mail to user
+        $investor->notify(new InvestmentMail($investor, $userMessage, 'Deposit approval'));
 
         $investment->status = 4;
 

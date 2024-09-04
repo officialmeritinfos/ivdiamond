@@ -151,7 +151,7 @@
                             <div class="deal-top">
                                 <h3>{{$package->name}}</h3>
                                 <h4> {{$package->roi}}%/ <span class="sup">{{$option->getReturnType($package->returnType)}}</span> </h4>
-                                <small class="text-white">{{$package->note}}</small>
+
                             </div>
                             <div class="deal-bottom">
                                 <ul class="deal-item">
